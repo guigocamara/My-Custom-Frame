@@ -1,0 +1,28 @@
+{
+  "name": "mycustomframebackend",
+  "version": "1.0.0",
+  "description": "Not quite sure what this does yet",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^10.5.0",
+    "firebase-admin": "^11.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "aaa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guigocamara/My-Custom-Frame.git"
+  },
+  "keywords": [
+    "aaa"
+  ],
+  "author": "Josue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guigocamara/My-Custom-Frame/issues"
+  },
+  "homepage": "https://github.com/guigocamara/My-Custom-Frame#readme"
+}
