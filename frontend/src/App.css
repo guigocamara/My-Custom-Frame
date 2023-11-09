@@ -1,9 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.cdnfonts.com/css/tw-cen-mt-std');
+@import url('https://fonts.cdnfonts.com/css/tw-cen-mt');
+@import 'bootstrap/dist/css/bootstrap.css';
+
+* {
+  font-family: 'Tw Cen Mt', sans-serif;
 }
 
+/* Nav bar Styles */
+
+.NavBarMain {
+  background-color: rgba(0,0,0,0.0) !important
+}
+
+.navLink {
+  font-family: 'Tw Cen Mt Std', sans-serif;
+  font-size: 25px;
+}
+
+.NavCart {
+  color:white;
+}
+
+
+/* Home Page Styles */
+
+
+.HomeHeader {
+  background-image: url("./images/Homeheader.jpg");
+  margin-top: -140px;
+  padding-top: 16rem;
+  width: 100vw;
+  height: 40vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.splashFont {
+  font-size: 6rem;
+  font-weight: 500;
+  color: white;
+}
+
+.splashFontSub {
+  font-size: 2.3rem;
+  color: white;
+}
+
+
+.wrapper {
+  padding: 40px;
+  padding-right: 120px;
+  padding-left: 120px;
+}
+
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: 500;
+  color: black;
+}
+
+.sectionFont {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}
+
+
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 

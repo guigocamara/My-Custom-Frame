@@ -1,39 +1,34 @@
 import React from 'react';
-import {
-  Nav,
-  NavLink,
-  Bars,
-  NavMenu,
-  NavBtn,
-  NavBtnLink
-} from './NavBarElements';
+import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElements';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Navbar = () => {
   return (
     <>
-      <Nav>
+      <Nav className ="NavBarMain">
         <NavLink to='/'>
           <img src={require('../../images/Logo-Base.png')} alt='logo' />
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/about' activeStyle>
-            About
+          <NavLink className= "navLink" to='/products' activeStyle>
+            products
           </NavLink>
-          <NavLink to='/services' activeStyle>
-            Services
+          <NavLink className= "navLink" to='/about' activeStyle>
+            about us
           </NavLink>
-          <NavLink to='/contact-us' activeStyle>
-            Contact Us
+          <NavLink className= "navLink" to='/contact-us' activeStyle>
+            contact us
           </NavLink>
-          <NavLink to='/sign-up' activeStyle>
-            Sign Up
+          <NavLink className= "navLink" to='/sign-up' activeStyle>
+            
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLink className= "navLink" to='/signin'>login</NavBtnLink>
+          <ShoppingCartIcon className = "NavCart"/>
         </NavBtn>
       </Nav>
     </>

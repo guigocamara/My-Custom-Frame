@@ -10,6 +10,7 @@ const Products = () => {
         height: '90vh'
       }}
     >
+
       <h1>Products</h1>
     </div>
   );
