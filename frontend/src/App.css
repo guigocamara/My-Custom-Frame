@@ -98,6 +98,14 @@ a {
   font-weight: 600;
 }
 
+.footerWrapper {
+  padding-top: 2vw;
+  padding-right: 8vw;
+  padding-left: 8vw;
+  padding-bottom: 3vw;
+}
+
+
 /*-----------------Home Page Styles-----------------*/
 
 .HomeHeader {
