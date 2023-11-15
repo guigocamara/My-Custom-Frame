@@ -3,6 +3,7 @@ import '../App.css';
 
 // Components
 import ArtGallery from '../components/homeArtistGal';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
       </div>
       <ArtGallery/>
 
+      <Footer />
 
     </div>
   );

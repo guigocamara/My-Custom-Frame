@@ -7,8 +7,8 @@ export const Nav = styled.nav`
   height: 140px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((70vw - 1000px) / 2);
-  z-index: 999;
+  padding: 0.3rem calc((70vw - 1000px) / 2);
+  z-index: 9999;
 
   /* Third Nav */
   /* justify-content: flex-start; */
@@ -25,6 +25,11 @@ export const NavLink = styled(Link)`
 
   &.active {
     color: #15cdfc;
+  }
+
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    color: #010606;
   }
 `;
 
@@ -76,11 +81,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
   border-radius: 9px;
-  padding: 10px 28px;
-  padding-right: 34px;
+  padding: 8px 20px;
   color: #fff;
-  outline: none;
-  border: none;
+  outline: white;
+  border: normal;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -89,8 +93,7 @@ export const NavBtnLink = styled(Link)`
   margin-left: 24px;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
+    transition: all 0.3s ease-in-out;
     color: #010606;
   }
 `;

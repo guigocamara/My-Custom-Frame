@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/tw-cen-mt');
 @import 'bootstrap/dist/css/bootstrap.css';
 
-/* Global Rules*/
+/*-----------------Global Rules-----------------*/
 
 * {
   font-family: Century Gothic, sans-serif;
@@ -30,7 +30,7 @@ a {
   transition-duration: 0.3s;
 }
 
-/* Nav bar Styles */
+/*-----------------NavBar Styles-----------------*/
 
 .NavBarMain {
   background-color: rgba(0,0,0,0.0) !important
@@ -70,7 +70,35 @@ a {
 
 
 
-/* Home Page Styles */
+/*-----------------Footer Styles-----------------*/
+
+.footerLogo {
+  background-image: url("./images/FooterLogo.png");
+}
+
+.footerLogoWrapper {
+  width: 10vw;
+  height: 10vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.socialIcons {
+  color: #ff4172;
+}
+
+.footerTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.footerSubTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*-----------------Home Page Styles-----------------*/
 
 .HomeHeader {
   background-image: url("./images/Homeheader.jpg"); 
