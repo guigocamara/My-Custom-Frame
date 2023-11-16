@@ -8,9 +8,14 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <div>
-      <div className="d-flex align-items-center HomeHeader SplashHeader vstack gap-3">
+      <div className="d-flex align-items-center HomeHeaderImage SplashHeader vstack gap-3">
         <div className="splashFont">build</div>
         <div className=" text-center splashFontSub">a unique frame for any occasion</div>
+        <div className="d-flex justify-content-center pt-3">
+          <button className="btn btn-outline-light btn-lg py-3 px-3 clear-button">
+            <div className="font-3">start building</div>
+            </button>
+        </div>
       </div>
 
       <div className="wrapper">
@@ -39,6 +44,18 @@ const Home = () => {
 
       </div>
       <ArtGallery/>
+
+      <div className="wrapper">
+
+        <div className="d-flex justify-content-center pt-5 sectionTitle-Light">want unique frames?</div>
+        <div className="d-flex justify-content-center pt-3 sectionFont-Light">You can contact us about more specific frames if you can't find the 
+        right size for you here. </div>
+        <div className="d-flex justify-content-center sectionFont-Light pt-5">
+          <a href="/order-form">
+            <button className="d-flex btn btn-outline-dark btn-lg" >Custom Orders</button>
+          </a>
+        </div>
+      </div>
 
       <Footer />
 

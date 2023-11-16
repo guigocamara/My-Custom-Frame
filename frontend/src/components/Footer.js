@@ -28,24 +28,24 @@ const Footer = () => {
                         </div>
                     </div>
                   
-                    <div className="col col-lg pt-5">
+                    <div className="col col-lg pt-4">
                         <div className='row'>
-                            <div className="col border">
+                            <div className="col-2">
                                 <div className="footerSubTitle pb-2">shop</div>
                                 <div className="">frames</div>
                                 <div className="">artist alley</div>
                             </div>
-                            <div className="col border">
-                                <div className="footerSubTitle pb-2">about</div>
-                                <div className="">shop</div>
-                                <div className="">shop</div>
-                            </div>
-                            <div className="col border">
-                                <div className="footerSubTitle pb-2">help</div>
+                            <div className="col-3">
+                                <div className="footerSubTitle pb-2">resources</div>
+                                <div className="">sign up</div>
                                 <div className="">custom requests</div>
-                                <div className="">shop</div>
                             </div>
-                            <div className="col-2" />
+                            <div className="col ">
+                                <div className="footerSubTitle pb-2">company</div>
+                                <div className="">copyright notice</div>
+                                <div className="">privacy policy</div>
+                                <div className="">about us</div>
+                            </div>
                         </div>
                     </div>
                     <div className="col-3">

@@ -4,6 +4,8 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import LoginForm from '../Login';
 
+import PersonIcon from '@mui/icons-material/Person';
+
 
 function Navbar () {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,19 +18,19 @@ function Navbar () {
     <>
       <Nav className="NavBarMain">
         <NavLink to='/'>
-          <img src={require('../../images/Logo-Base.png')} alt='logo' />
+          <img src={require('../../images/Logo-Base-basic.png')} alt='logo' /> <div className="font-3 NavLinkLogo">mycustomframe</div>
         </NavLink>
         <Bars />
         <NavMenu className="col">
-          <NavLink className="NavLink" to='/products' activeStyle> products </NavLink>
+          <NavLink className="NavLink" to='/products' activeStyle>framing ideas</NavLink>
           
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn >
-          <NavBtnLink className="button NavLogButton" onClick={togglePopup}>login</NavBtnLink>
+          <NavBtnLink className="button NavLogButton" onClick={togglePopup}><PersonIcon /></NavBtnLink>
           {isOpen && <LoginForm handleClose={togglePopup} />}
-          <ShoppingCartIcon className="NavCart"/>
+          <NavBtnLink ><ShoppingCartIcon /> </NavBtnLink>
         </NavBtn>
       </Nav>
     </>
