@@ -41,7 +41,6 @@ a {
   margin-right: 30px;
 }
 
-
 .NavLogButton {
   font-size: 25px;
   margin-right: 30px;
@@ -58,6 +57,8 @@ a {
   transition-duration: 0.8s;
 }
 
+
+
 .SplashHeader {
   margin-top: -140px;
   padding-top: 16rem;
@@ -67,7 +68,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 
 /*-----------------Footer Styles-----------------*/
@@ -105,11 +105,14 @@ a {
   padding-bottom: 3vw;
 }
 
-
 /*-----------------Home Page Styles-----------------*/
 
 .HomeHeader {
   background-image: url("./images/Homeheader.jpg"); 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .splashFont {
