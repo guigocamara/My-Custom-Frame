@@ -21,6 +21,8 @@ collectionRef.get()
   .catch((err) => {
     console.error('Error getting documents', err);
   });
+
+// Authenticate using REST API
 /*
 // Your logic to interact with Firebase REST API endpoints
 const authToken = 'YOUR_FIREBASE_AUTH_TOKEN'; // Replace with your Firebase Auth token
