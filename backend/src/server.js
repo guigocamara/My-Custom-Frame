@@ -4,9 +4,9 @@ const fetch = require('node-fetch'); // Using node-fetch to make HTTP requests
 // Access Firestore instance
 const firestore = admin.firestore;
 
-// Your logic to interact with Firestore using the Admin SDK
+// Sample logic to interact with Firestore using the Admin SDK
+/*
 const collectionRef = firestore.collection('testCollection');
-
 collectionRef.get()
   .then((snapshot) => {
     if (snapshot.empty) {
@@ -21,8 +21,9 @@ collectionRef.get()
   .catch((err) => {
     console.error('Error getting documents', err);
   });
+  */
 
-// Authenticate using REST API
+// Sample logic to interact with Firebase using the REST API
 /*
 // Your logic to interact with Firebase REST API endpoints
 const authToken = 'YOUR_FIREBASE_AUTH_TOKEN'; // Replace with your Firebase Auth token
@@ -40,3 +41,15 @@ fetch(getUsersEndpoint, {
   .then(data => console.log('Firebase Auth API response:', data))
   .catch(error => console.error('Error fetching Firebase Auth API:', error));
 */
+
+// Create a new user using Admin SDK
+admin.auth().createUser({
+  email: 'user@example.com',
+  password: 'password123',
+})
+.then((userRecord) => {
+  console.log('Successfully created new user:', userRecord.uid);
+})
+.catch((error) => {
+  console.error('Error creating new user:', error);
+});
